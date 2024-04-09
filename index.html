@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>SIGN UP</title>
+    <script>
+    var CONFIRM = function() {
+         if (document.getElementById("password1").value ==
+             document.getElementById("password2").value) {
+             document.getElementById("Message").style.color = "Green";
+             document.getElementById("Message").innerHTML = "*Passwords match!"
+        } else {
+            document.getElementById("password1").style.color = "Red";
+            document.getElementById("Message").style.color = "Red";
+            document.getElementById("Message").innerHTML = "*Passwords do NOT match!"
+        }
+    }
+        </script>
+</head>
+<body>
+    
+    <div class="container">
+    <img src="assest/halie-west-25xggax4bSA-unsplash.jpg" class="img1">
+    <div class="box"></div>
+    <img src="assest/odin.png" class="img2">
+    <p class="logo">ODIN</p>
+    
+    <div class="description">This is not a real online services.You know you need something<br>like this in your life
+    to help you realize your deepest dreams.<br>Sign up now to get started.<br><br>You know you want to.
+</div>
+<form name="reg" method="post" onsubmit="CONFIRM(event)">
+    <div class="content">
+        <h3>Let's do this!</h3>
+        <table >
+            <tr>
+              <th align="left">FIRST NAME</th>
+              <th align="left">LAST NAME</th>
+            </tr>
+            <tr>
+              <td><input type="text"></td>
+              <td><input type="text"></td>
+            </tr>
+            <tr>
+                <th align="left">EMAIL</th>
+                <th align="left">PHONE NUMBER</th>
+            </tr>
+            <tr>
+              <td><input type="text"></td>
+              <td><input type="text"></td>
+            </tr>
+            <tr>
+           
+              <tr>
+               <th align="left">PASSWORD</th>
+              <th align="left">CONFIRM PASSWORD</th>
+            </tr>
+            <tr>
+              <td><input type="password" name="password1" id="password1"></td>
+              
+              <td><input type="password" name="password2" id="password2"></td>
+              
+            </tr>
+            <tr>
+                <td><span id="Message"></span></td>
+            </tr>
+          </table>
+    </div>
+
+    <button type="submit" value="submit">Create Account</button>
+    <p class="login">Already have Account?<a href="login.html"><b>Log in</b></a></p>
+</div>
+</form>
+
+</body>
+</html>
